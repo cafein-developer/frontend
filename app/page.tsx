@@ -34,8 +34,7 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      api 테스트
-      {data}
+      메인입니다
     </main>
   )
 }
