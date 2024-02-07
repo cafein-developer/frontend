@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <RecoilRoot>
+    // <RecoilRoot>
       <html lang="en">
         <body className={inter.className}>
           <div className="min-w-[390px] max-w-[500px]">
@@ -26,6 +26,6 @@ export default function RootLayout({
           </div>
         </body>
       </html>
-    </RecoilRoot>
+    // </RecoilRoot>
   )
 }
