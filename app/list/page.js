@@ -1,4 +1,5 @@
 //여기에 만드시면 됩니다
+import './listStyle.css';
 
 export default async function ListPage() {
   return (
