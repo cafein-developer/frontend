@@ -3,7 +3,7 @@
 export default async function ListPage() {
   return (
     <div>
-      <h1>List</h1>
+      <h3>List</h3>
       <p>List page content</p>
     </div>
   )
