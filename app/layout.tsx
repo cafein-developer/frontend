@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     // <RecoilRoot>
       <html lang="en">
-        <body className={inter.className}>
+        <body>
           <div className="min-w-[390px] max-w-[500px]">
             {children}
           </div>
