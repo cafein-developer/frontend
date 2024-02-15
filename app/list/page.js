@@ -1,15 +1,16 @@
 //여기에 만드시면 됩니다
 import './css/listStyle.css';
 
+
 export default async function ListPage() {
   return (
     <div className='cafe_details'>
-      <header>
+      {/* <header>
         <div className='header_top'>
           <h1 className='cafein_logo ir_pm'><a href="#">cafein-logo</a></h1>
           <button type='button' className='m_log'>로그인</button>
         </div>
-      </header>
+      </header> */}
       <section>
         <h2 className='blind'>mv-slide</h2>
         <div className='mv_wrap'>
@@ -98,7 +99,47 @@ export default async function ListPage() {
           </button>
         </div>
         <div className='review'>
-
+          <div className='review_create'>
+            <h3>리뷰(30)</h3>
+            <input type='text' placeholder='리뷰를 작성해주세요.'></input>
+          </div>
+          <ul className='review_list'>
+            <li>
+              <div className='list_top'>
+                <h4>닉네임1</h4>
+                <b>2024년 2월 14일</b>
+              </div>
+              <div className='text_box'>
+                <p>
+                  사장님이 맛있고 커피가 친절해요.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div className='list_top'>
+                <h4>닉네임2</h4>
+                <b>2024년 2월 17일</b>
+              </div>
+              <div className='text_box'>
+                <p>
+                  사장님이 맛있고 커피가 친절해요. 사장님이 맛있고 커피가 친절해요. 사장님이 맛있고 커피가 친절해요. 사장님이 맛있고 커피가 친절해요. 사장님이 맛있고 커피가 친절해요. 사장님이 맛있고 커피가 친절해요. 사장님이 맛있고 커피가 친절해요. 사장님이 맛있고 커피가 친절해요.
+                </p>
+              </div>
+              <button type='button'>더보기</button>
+            </li>
+            <li>
+              <div className='list_top'>
+                <h4>닉네임2</h4>
+                <b>2024년 2월 17일</b>
+              </div>
+              <div className='text_box'>
+                <p>
+                  사장님이 맛있고 커피가 친절해요. 사장님이 맛있고 커피가 친절해요. 사장님이 맛있고 커피가 친절해요. 사장님이 맛있고 커피가 친절해요. 사장님이 맛있고 커피가 친절해요. 사장님이 맛있고 커피가 친절해요. 사장님이 맛있고 커피가 친절해요. 사장님이 맛있고 커피가 친절해요.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div className='go_top'></div>
         </div>
       </main>
     </div>
