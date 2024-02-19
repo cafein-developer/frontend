@@ -52,5 +52,6 @@ button {
 }
 
 body {
+  line-height: 20px;
   font-family: 'Pretendard-Medium';
 }
