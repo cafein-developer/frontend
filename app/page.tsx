@@ -8,35 +8,22 @@ import { useRecoilState } from "recoil";
 import { cafeInfoState } from "../recoil/atoms";
 import { NoticeBanner } from "./components/notice_banner";
 import { useRouter, useSearchParams } from "next/navigation";
+import { getCafeLists } from "./api";
 
-// async function getData() {
-//   const res = await fetch('http://13.124.23.172:8090/cafe')
-//   // The return value is *not* serialized
-//   // You can return Date, Map, Set, etc.
 
-//   if (!res.ok) {
-//     // This will activate the closest `error.js` Error Boundary
-//     throw new Error('Failed to fetch data')
-//   }
+export default async function Home() {
 
-//   return res.json()
-// }
 
-export default function Home() {
-  // const data = await getData()
-  // const [data, setData] = useState();
-  // useEffect(() => {
-  //   axios.get('http://13.124.23.172:8090/cafe', {
-  //     headers: {
-  //       Accept: "application/json",
-  //       "Content-Type": "application/json",
-  //     },
-  //   }).then((res) => {
-  //     setData(res.data);
-  //   }).catch((err) => {
-  //     console.log(err);
-  //   })
-  // }, [])
+  const [cafeList, setCafeList] = useState();
+  useEffect(() => {
+    getCafeLists().then((res) => {
+      setCafeList(res.data);
+    }).catch((err) => {
+      console.log(err);
+    })
+  }, [])
+
+  console.log(cafeList);
   const router = useRouter();
   const params = useSearchParams();
 
