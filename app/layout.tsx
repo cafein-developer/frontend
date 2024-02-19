@@ -20,10 +20,11 @@ export default function RootLayout({
       <html lang="ko">
         <head>
           <title>cafein</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         </head>
-        <body className="w-full">
+        <body>
           <Navbar />
-          <div className="mx-auto max-w-[500px]">
+          <div className="w-full mx-auto max-w-[500px]">
             {children}
           </div>
         </body>
