@@ -11,9 +11,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { getCafeLists } from "./api";
 
 
-export default async function Home() {
-
-
+export default function Home() {
   const [cafeList, setCafeList] = useState();
   useEffect(() => {
     getCafeLists().then((res) => {
