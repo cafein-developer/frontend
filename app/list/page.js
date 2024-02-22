@@ -11,6 +11,7 @@ export default async function ListPage() {
           <button type='button' className='m_log'>로그인</button>
         </div>
       </header> */}
+      <div className='modal'></div>
       <section>
         <h2 className='blind'>mv-slide</h2>
         <div className='mv_wrap'>
@@ -140,6 +141,18 @@ export default async function ListPage() {
             </li>
           </ul>
           <div className='go_top'></div>
+          <div className='create_review_container'>
+            <div className='create_review'>
+              <button type='button' className='close_btn'></button>
+              <div className='create_text'>
+                <p>리뷰작성</p>
+                <b><span>56</span>/최소 20자 작성</b>
+              </div>
+              <textarea placeholder='리뷰를 작성해주세요.'></textarea>
+              <p className='review_policy'>리뷰 정책란 리뷰 정책란 리뷰 정책란 리뷰 정책란 리뷰 정책란 리뷰 정책란 리뷰 정책란 리뷰 정책란 리뷰 정책란 리뷰 정책란</p>
+            </div>
+            <button type='button' className='submit_btn'>작성완료</button>
+          </div>
         </div>
       </main>
     </div>
