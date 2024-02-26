@@ -141,7 +141,8 @@ export default async function ListPage() {
             </li>
           </ul>
           <div className='go_top'></div>
-          <div className='create_review_container'>
+        </div>
+        <div className='create_review_container'>
             <div className='create_review'>
               <button type='button' className='close_btn'></button>
               <div className='create_text'>
@@ -152,6 +153,81 @@ export default async function ListPage() {
               <p className='review_policy'>리뷰 정책란 리뷰 정책란 리뷰 정책란 리뷰 정책란 리뷰 정책란 리뷰 정책란 리뷰 정책란 리뷰 정책란 리뷰 정책란 리뷰 정책란</p>
             </div>
             <button type='button' className='submit_btn'>작성완료</button>
+        </div>
+        <div className='choice_container'>
+            <div className='choice'>
+              <button type='button' className='close_btn'></button>
+              <div className='choice_icon'></div>
+              <p className='choice_text'>아래의 선택지 중<br></br>하나를 골라주세요!</p>
+              <div className='choice_box'>
+                <div className='inner_icon'></div>
+                <div className='inner_text'>
+                  <b>저라면 다른 무드를 선택할래요!</b>
+                  <p>Cafe in에 다른 무드를 제안할게요.</p>
+                </div>
+              </div>
+              <div className='choice_box'>
+                <div className='inner_icon'></div>
+                <div className='inner_text'>
+                  <b>제가 알던 정보와 달라요!</b>
+                  <p>Cafe in에 표기된 메뉴, 위치정보가 달라요.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div className='select_mood_container'>
+            <div className='select_mood'>
+              <button type='button' className='close_btn'></button>
+              <div className='choice_icon'></div>
+              <p className='choice_text'>선호하는 분위기를<br></br>선택해 주세요!</p>
+              <div className='mood_wrap'>
+                <div className='mood_box on'>
+                  <p>Modern</p>
+                  <button type='button'></button>
+                </div>
+                <div className='mood_box'>
+                  <p>Kitsch</p>
+                  <button type='button'></button>
+                </div>
+                <div className='mood_box'>
+                  <p>Retro</p>
+                  <button type='button'></button>
+                </div>
+                <div className='mood_box'>
+                  <p>Antique</p>
+                  <button type='button'></button>
+                </div>
+                <div className='mood_box'>
+                  <p>Vintage</p>
+                  <button type='button'></button>
+                </div>
+                <div className='mood_box'>
+                  <p>Industrial</p>
+                  <button type='button'></button>
+                </div>
+                <div className='mood_box'>
+                  <p>Houseplants</p>
+                  <button type='button'></button>
+                </div>
+              </div>
+              <input type='text' placeholder='기타의견 쓰기'></input>
+            </div>
+            <button type='button' className='submit_btn'>선택완료</button>
+        </div>
+        <div className='feedback_container'>
+          <div className='feedback'>
+            <button type='button' className='close_btn'></button>
+            <div className='choice_icon'></div>
+            <p className='choice_text'>어떻게 반영하면 좋을까요?</p>
+            <input type='text' placeholder='기타의견 쓰기'></input>
+          </div>
+          <button type='button' className='submit_btn'>입력완료</button>
+        </div>
+        <div className='notice_container'>
+          <div className='notice'>
+          <button type='button' className='close_btn'></button>
+          <div className='notice_icon'></div>
+            <p className='choice_text'>소중한 의견 감사합니다!<br></br>추후 의견 반영 후 수정하겠습니다.</p>
           </div>
         </div>
       </main>
