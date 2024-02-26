@@ -5,12 +5,6 @@ import './css/listStyle.css';
 export default async function ListPage() {
   return (
     <div className='cafe_details'>
-      {/* <header>
-        <div className='header_top'>
-          <h1 className='cafein_logo ir_pm'><a href="#">cafein-logo</a></h1>
-          <button type='button' className='m_log'>로그인</button>
-        </div>
-      </header> */}
       <div className='modal'></div>
       <section>
         <h2 className='blind'>mv-slide</h2>
