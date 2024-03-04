@@ -21,7 +21,6 @@ export default function Home() {
     })
   }, [])
 
-  console.log(cafeList);
   const router = useRouter();
   const params = useSearchParams();
 
@@ -46,7 +45,7 @@ export default function Home() {
 
   const handleKeyDown = (e: any) => {
     if (e.key === 'Enter') {
-      console.log(e.target.value);
+      router.push(`/lists?searchInfo=${inputValue}`)
     }
   }
 
@@ -57,6 +56,13 @@ export default function Home() {
   const onBlur = () => {
     setFocused(false);
   }
+
+  useEffect(() => {
+    if (isClickTheme) {
+      setFocused(true);
+      () => onFocus()
+    }
+  }, [isClickTheme])
 
   return (
     <main className="flex min-h-screen flex-col items-center w-full">

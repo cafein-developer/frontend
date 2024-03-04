@@ -102,7 +102,7 @@ export default async function ListPage() {
         <div className='review'>
           <div className='review_create'>
             <h3>리뷰(30)</h3>
-            <input type='text' placeholder='리뷰를 작성해주세요.'></input>
+            <input type='text' placeholder='리뷰를 작성해주세요.' className="outline-none"></input>
           </div>
           <ul className='review_list'>
             <li>

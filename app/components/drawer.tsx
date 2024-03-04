@@ -17,6 +17,14 @@ export const BottomDrawer = () => {
 
   return (
     <Drawer placement="bottom" open={open} onClose={closeDrawer} className="py-4 px-[24px] rounded-[30px]">
+      <div className="flex items-center justify-between mb-4">
+        <button className="invisible"><img src="/delete_grey.svg" alt="삭제" /></button>
+        <div className="flex">
+          <img src="/logo_black.svg" alt="로고검정" />
+          <span className="ml-1">무드 안내</span>
+        </div>
+        <button type="button" onClick={closeDrawer}><img src="/delete_grey.svg" alt="삭제" /></button>
+      </div>
       <Carousel>
         <div className="relative w-full">
           <img

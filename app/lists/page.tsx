@@ -3,8 +3,10 @@
 import { useSearchParams } from "next/navigation"
 import { useState } from "react"
 import { CafeCard } from "../components/cafe_card"
+import { useRouter } from "next/navigation";
 
 export default function ListsPage() {
+  const router = useRouter();
   const params = useSearchParams();
   const searchInfo = params.get('searchInfo');
   const mood = params.get('mood');
@@ -68,7 +70,9 @@ export default function ListsPage() {
       )}
 
       <div className="mt-[7px]">
-        <CafeCard />
+        <button onClick={() => router.push("/lists/1")} className="w-full">
+          <CafeCard />
+        </button>
       </div>
     </div >
   )
