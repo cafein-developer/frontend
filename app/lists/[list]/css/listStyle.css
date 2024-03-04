@@ -21,7 +21,7 @@
   transform: translateY(-50%);
   width: 64px;
   height: 15px;
-  background: url(../../../public/cafein_logo.svg) no-repeat center/contain;
+  background: url(../../../../public/cafein_logo.svg) no-repeat center/contain;
 }
 .header_top button {
   position: absolute;
@@ -54,7 +54,7 @@ section {
 .mv_slide div {
   width: 100%;
   height: 100%;
-  background: url(../../../public/mv_img_ex.png) no-repeat center/contain;
+  background: url(../../../../public/mv_img_ex.png) no-repeat center/contain;
 }
 
 /* main */
@@ -95,7 +95,7 @@ main {
     display: block;
     width: 100%;
     height: 100%;
-    background: url(../../../public/comment_icon.svg) no-repeat center/cover;
+    background: url(../../../../public/comment_icon.svg) no-repeat center/cover;
   }
   /* cafe-mood */
   .cafe_mood {
@@ -122,7 +122,7 @@ main {
     display: block;
     width: 14px;
     height: 18px;
-    background: url(../../../public/map_pin.svg) no-repeat top 2px left 0/contain;
+    background: url(../../../../public/map_pin.svg) no-repeat top 2px left 0/contain;
   }
   .cafe_address p {
     display: block;
@@ -180,7 +180,7 @@ main {
   float: left;
   width: 11.25px;
   height: 15px;
-  background: url(../../../public/bottom_arrow.svg) no-repeat left 0px top 7px/contain;
+  background: url(../../../../public/bottom_arrow.svg) no-repeat left 0px top 7px/contain;
 }
 
 /* facility */
@@ -306,7 +306,7 @@ main {
   width: 51px;
   height: 51px;
   margin-bottom: 11px;
-  background: url(../../../public/go_up.svg) no-repeat center;
+  background: url(../../../../public/go_up.svg) no-repeat center;
 }
 
 /* 리뷰작성 */
@@ -333,7 +333,7 @@ main {
   width: 100%;
   height: 20px;
   margin-bottom: 10px;
-  background: url(../../../public/delete_btn.png) no-repeat top 0 right 0/contain;
+  background: url(../../../../public/delete_btn.png) no-repeat top 0 right 0/contain;
 }
 .create_text {
   width: 100%;
@@ -422,7 +422,7 @@ main {
   width: 50px;
   height: 50px;
   margin: 40px auto 20px;
-  background: url(../../../public/comment_icon.svg) no-repeat center/cover;
+  background: url(../../../../public/comment_icon.svg) no-repeat center/cover;
 }
 .choice_text {
   text-align: center;
@@ -510,7 +510,7 @@ main {
   width: 10px;
   height: 10px;
   border: 1px solid #000;
-  background: url(../../../public/delete_white.svg) no-repeat center/cover;
+  background: url(../../../../public/delete_white.svg) no-repeat center/cover;
 }
 .select_mood input {
   width: 100%;

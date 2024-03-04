@@ -2,7 +2,7 @@ export const CafeCard = () => {
   const tag = ["Modern", "Simple"]
 
   return (
-    <div className="py-[12px] flex flex-col border-b border-b-[A1A1A1]">
+    <div className="py-[12px] flex flex-col border-b border-b-[A1A1A1] w-full">
       <div className="flex items-center">
         <span className="text-lg">카페솔트</span>
         <img src="/verified_p.svg" alt="인증p" className="ml-[5px]" />

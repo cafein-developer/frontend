@@ -21,7 +21,6 @@ export default function Home() {
     })
   }, [])
 
-  console.log(cafeList);
   const router = useRouter();
   const params = useSearchParams();
 
@@ -46,7 +45,7 @@ export default function Home() {
 
   const handleKeyDown = (e: any) => {
     if (e.key === 'Enter') {
-      console.log(e.target.value);
+      router.push(`/lists?searchInfo=${inputValue}`)
     }
   }
 
