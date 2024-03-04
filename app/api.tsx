@@ -5,8 +5,7 @@ const AuthAPI = axios.create({
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
-    key: "X-API-KEY",
-    value: "f55c5393-a03a-4094-93b1-6708940d698d",
+    "X-API-KEY": "f55c5393-a03a-4094-93b1-6708940d698d"
   },
   validateStatus: (status) => {
     return (status >= 200 && status < 300) || status === 304;
