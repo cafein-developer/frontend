@@ -33,7 +33,8 @@ export const BottomDrawer = () => {
         return (
           <div className="hidden"></div>
         )
-      }}>
+      }}
+      >
         <div className="relative w-full">
           <img
             src="/cafe_theme/1-3Modern.png"
