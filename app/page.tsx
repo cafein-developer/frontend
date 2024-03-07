@@ -65,7 +65,7 @@ export default function Home() {
   }, [isClickTheme])
 
   return (
-    <main className="flex min-h-screen flex-col items-center w-full">
+    <main className="flex flex-col items-center w-full">
       <NoticeBanner />
       {isClickTheme ? (
         <div className="w-full px-4">
@@ -92,13 +92,7 @@ export default function Home() {
       )
       }
 
-
-      {/* <div class="text-center">
-        <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-bottom-example" data-drawer-show="drawer-bottom-example" data-drawer-placement="bottom" aria-controls="drawer-bottom-example">
-          Show bottom drawer
-        </button>
-      </div> */}
-      <div className="grid grid-cols-2 gap-4 mt-5 px-4 relative">
+      <div className="grid grid-cols-2 gap-4 px-4 relative py-5">
         {isClickTheme && <div className="absolute bg-black opacity-70 w-full h-full top-0 left-0"></div>}
 
         <button onClick={() => onClickTheme("modern")}>
