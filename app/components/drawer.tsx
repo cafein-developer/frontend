@@ -16,7 +16,7 @@ export const BottomDrawer = () => {
   const closeDrawer = () => setOpen(false);
 
   return (
-    <Drawer placement="bottom" open={open} onClose={closeDrawer} className="py-4 px-[24px] rounded-[30px]">
+    <Drawer placement="bottom" open={open} onClose={closeDrawer} className="py-4 px-[24px] rounded-t-[30px] !max-w-[500px] inset-x-0 mx-auto">
       <div className="flex items-center justify-between mb-4">
         <button className="invisible"><img src="/delete_grey.svg" alt="삭제" /></button>
         <div className="flex">
